@@ -22,3 +22,11 @@ To reconcile this issue, the implied binomial tree was created. Implied binomial
 node to node. This makes the tree more flexible and matches the market prices of all standard options.
 
 Below are some results using the binomial and implied binomial pricing models:
+
+![image](https://user-images.githubusercontent.com/70719859/127947602-1ae521b2-a9ab-4ec3-a07a-db32fb5104f7.png)
+![image](https://user-images.githubusercontent.com/70719859/127947607-daa9c879-472a-4deb-a818-e10278af7563.png)
+![image](https://user-images.githubusercontent.com/70719859/127947616-f489b1d0-5409-4557-b97a-190c51eb85ea.png)
+![image](https://user-images.githubusercontent.com/70719859/127947629-1fa54744-d9dc-45da-8c7d-55d3b0441357.png)
+![image](https://user-images.githubusercontent.com/70719859/127947574-75865a0e-5e9e-4d04-ab15-92afcc9341d3.png)
+
+At all maturities, the implied tree price was closer to the actual price than the Jarrow-Rudd binomial tree price. The binomial tree model tended to perform better at deep in the money strike prices, but as it moved to out of the money strike prices it deviated further from the actual price. This is a result of using the same volatility at each strike price. The implied tree model, however, used a different volatility at each strike price and was able to better price the options.
